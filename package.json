@@ -1,0 +1,25 @@
+{
+  "name": "updater",
+  "version": "1.0.0",
+  "description": "Hope simple sample review the solution.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.1.1",
+    "electron-builder": "^23.6.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/skygit20/app-updater.git"
+  },
+  "build": "electron-builder build --mac --win --publish never",
+  "deploy": "electron-builder build --mac --win --publish always",
+  "dependencies": {
+    "electron-updater": "^5.3.0"
+  }
+}
